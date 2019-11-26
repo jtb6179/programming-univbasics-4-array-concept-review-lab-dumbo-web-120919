@@ -21,13 +21,13 @@ def find_max_value(array)
 end
 
 def find_min_value(array)
-  x = 
-  num_high = 0
+  x = 0
+  num_min = array.last
   while array[x] do
-  if num_high > array[x]
-    num_high = array[x]
+  if num_min > array[x]
+    num_min = array[x]
   end
     x += 1 
   end
-  return num_high
+  return num_min
 end
